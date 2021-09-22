@@ -1,5 +1,7 @@
 body {
-    background-color: rosybrown;
+background-image: url("./img/meeting-image.jpg");
+background-color: #419F00;
+background-size: cover;
 }
 
 #title {
@@ -15,7 +17,19 @@ body {
     font-style: italic;
 }
 
+#survey-form{
+    width: 50%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: forestgreen;
+    opacity: 0.9;
+;
+}
+
 form {
     border: 2px white solid;
     display: grid;
+    /*background-color: forestgreen;
+    opacity: 0.9;*/
 }
