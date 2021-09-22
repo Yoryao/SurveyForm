@@ -2,6 +2,7 @@ body {
 background-image: url("./img/meeting-image.jpg");
 background-color: #419F00;
 background-size: cover;
+background-attachment: fixed;
 }
 
 #title {
@@ -30,6 +31,7 @@ background-size: cover;
 form {
     border: 2px white solid;
     display: grid;
+    position: absolute;
     /*background-color: forestgreen;
     opacity: 0.9;*/
 }
