@@ -1,0 +1,21 @@
+body {
+    background-color: rosybrown;
+}
+
+#title {
+    border: 2px white solid;
+    text-align: center;
+    color: white;
+}
+
+#description {
+    border: 2px white solid;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+form {
+    border: 2px white solid;
+    display: grid;
+}

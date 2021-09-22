@@ -11,30 +11,35 @@
 </head>
 <body>
     <header>
-        <h3>freeCodeCamp Survey Form</h3>
-        <h2>Thank you for taking the time to help us improve the platform</h2>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
     <main>
-        <form>
-            <label for="name">
-            <input type="text" label="Nombre" name="name" placeholder="Enter your name" required>
+        <form id="survey-form" action="">
+
+            <label id="name-label" for="name">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </label>
 
-            <label for="email">
-            <input type="email" name="email" placeholder="Enter your Email" required>
+            <label id="email-label" for="email">
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+<!-- DEBO VALIDAR EL INGRESO DEL EMAIL -->
+            </label>
+
+
+            <label id="number-label" for="age">
+            <input type="number" id="number" name="age" placeholder="Age">
+            </label>
+<!-- DEBO VALIDAR LA EDAD DENTRO DE UN MIN Y UN MAX -->
+
+
+
+            <label id="dropdown" for="role">
+            <input type="" name="role" id="">
         </label>
 
 
-            <label for="age">
-            <input type="number" name="age" placeholder="Age">
-            </label>
-
-            <label for="role">
-            <input type= name="role" id="">
-        </label>
-
-
-            <label for="definitely">
+            <label id="reco" for="definitely">
                 <input type="radio" name="reco" id="">Definitely
             </label>
             <label for="maybe">
@@ -52,14 +57,68 @@
 
             <input type="" name="feature" id="">
 
-            <input type="checkbox" name="improve" id="">
 
-            <label for="comments">
-                <input type="text" name="comments" id="" placeholder="Enter your commet here...">
+            <label for="front">
+            <input type="checkbox" name="improve"  value="front|"  id="">Front-end Projects
+            </label>
+            <label for="back">
+            <input type="checkbox" name="improve"  value="back" id="">Back-end Projects
+            </label>
+            <label for="data">
+            <input type="checkbox" name="improve"  value="data" id="">Data Visualization
+            </label>
+            <label for="challenge">
+            <input type="checkbox" name="improve"  value="chall" id="">Challenges
+            </label>
+            <label for="openSource">
+            <input type="checkbox" name="improve" value="source"  id="">Open Source Community
+            </label>
+            <label for="git">
+            <input type="checkbox" name="improve" value="gitter"  id="">Gitter help rooms
+            </label>
+            <label for="videos">
+            <input type="checkbox" name="improve" value="videos"  id="">Videos
+            </label>
+            <label for="Meetups">
+            <input type="checkbox" name="improve"  value="meetups" id="">City Meetups
+            </label>
+            <label for="wiki">
+            <input type="checkbox" name="improve"  value="wiki" id="">Wiki
+            </label>
+            <label for="forum">
+            <input type="checkbox" name="improve" value="forum"  id="">Forum
+            </label>
+            <label for="course">
+            <input type="checkbox" name="improve"  value="course" id="">Additional Courses
             </label>
 
 
-            <input type="submit" name="submit" id="">
+                                                                    
+                                                            
+                                                    
+                                            
+                                    
+                            
+                    
+            
+    
+
+
+
+
+
+
+
+            <label for="comments">
+                <input type="textarea" name="comments" id="" placeholder="Enter your commet here...">
+            </label>
+
+
+
+
+
+
+            <input type="submit" name="submit" id="submit">
 
 
 
