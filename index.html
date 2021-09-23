@@ -10,148 +10,120 @@
     <title>FCC: Survey Form</title>
 </head>
 <body>
+
+<!-- HEADER -->
     <header>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
+<!-- END HEADER -->
+
+<!-- FORM -->
     <main>
         <form id="survey-form" action="">
-
             <label id="name-label" for="name">Name
             </label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             <label id="email-label" for="email">Email
             </label>
-            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
 <!-- DEBO VALIDAR EL INGRESO DEL EMAIL -->
 
-
-<label id="number-label" for="age">Age (Optional)
+            <label id="number-label" for="age">Age (Optional)
             </label>
-            <input type="number" id="number" name="age" placeholder="Age">
+                <input type="number" id="number" name="age" placeholder="Age" min="12" max="100">
 <!-- DEBO VALIDAR LA EDAD DENTRO DE UN MIN Y UN MAX -->
 
 
+<!-- ROLE -->
+            <label id="dropDown" for="role" class="role" placeholder="Select current role">Which option best describes your current role?
+            </label>
+                <select type="" name="role" id="dropdown">
+                    <option disabled selected value="option">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="not">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+<!-- END ROLE -->
 
-            <label id="dropdown" for="role" placeholder="Select current role">Which option best describes your current role?
+<!-- RECOMENDATION -->
+            <div class="recommend">Would you recommend freeCodeCamp to a friend?</div>
+            
+            <label class="reco" for="definitely">
+                <input type="radio" checked name="reco" class="radio" value="definitely">Definitely
             </label>
-            <select type="" name="role" id="">
-                <option disabled selected value="option">Select current role</option>
-                <option value="student">Student</option>
-                <option value="job">Full Time Job</option>
-                <option value="learner">Full Time Learner</option>
-                <option value="not">Prefer not to say</option>
-                <option value="other">Other</option>
-            </select>
-
-
-            <label id="reco" for="definitely">
-                <input type="radio" name="reco" id="">Definitely
+            <label class="reco" for="maybe">
+                <input type="radio" name="reco" class="radio" value="maybe">Maybe
             </label>
-            <label for="maybe">
-                <input type="radio" name="reco" id="">Maybe
+            <label class="reco" for="notSure">
+                <input type="radio" name="reco" class="radio" value="notSure">Not sure
             </label>
-            <label for="notSure">
-                <input type="radio" name="reco" id="">Not sure
-            </label>
+<!-- END -->                
                 
-                
-                
-                <label id="features" for="feature" placeholder="Select an option">What is your favorite feature of freeCodeCamp?
+<!-- FEATURE  -->
+                <label class="features" for="feature" placeholder="Select an option">What is your favorite feature of freeCodeCamp?
                 </label>
-                    <select type="" name="feature" id="">
+                <select type="" name="feature" id="">
                     <option disabled selected value="option">Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
                     <option value="community">Community</option>
                     <option value="source">Open Source</option>  
                 </select>
+<!-- END FEATURE -->
 
 
-
-            <label for="front">
-            <input type="checkbox" name="improve"  value="front|"  id="">Front-end Projects
-            </label>
-            <label for="back">
-            <input type="checkbox" name="improve"  value="back" id="">Back-end Projects
-            </label>
-            <label for="data">
-            <input type="checkbox" name="improve"  value="data" id="">Data Visualization
-            </label>
-            <label for="challenge">
-            <input type="checkbox" name="improve"  value="chall" id="">Challenges
-            </label>
-            <label for="openSource">
-            <input type="checkbox" name="improve" value="source"  id="">Open Source Community
-            </label>
-            <label for="git">
-            <input type="checkbox" name="improve" value="gitter"  id="">Gitter help rooms
-            </label>
-            <label for="videos">
-            <input type="checkbox" name="improve" value="videos"  id="">Videos
-            </label>
-            <label for="Meetups">
-            <input type="checkbox" name="improve"  value="meetups" id="">City Meetups
-            </label>
-            <label for="wiki">
-            <input type="checkbox" name="improve"  value="wiki" id="">Wiki
-            </label>
-            <label for="forum">
-            <input type="checkbox" name="improve" value="forum"  id="">Forum
-            </label>
-            <label for="course">
-            <input type="checkbox" name="improve"  value="course" id="">Additional Courses
-            </label>
-
-
-                                                                    
-                                                            
-                                                    
-                                            
-                                    
-                            
-                    
-            
-    
-
-
-
-
-
-
-
-            <label for="comments">Any comments or suggestions?
-                <textarea name="comments" id="" rows="10" cols="30" placeholder="Enter your comment here..."></textarea>
+<!-- IMPROVES -->
+                    <div>What would you like to see improved? (Check all that apply)</div>
+                <label for="front">
+                    <input type="checkbox" name="improve"  value="front"  class="checkbox" id="">Front-end Projects
                 </label>
+                <label for="back">
+                    <input type="checkbox" name="improve"  value="back" class="checkbox" id="">Back-end Projects
+                </label>
+                <label for="data">
+                    <input type="checkbox" name="improve"  value="data" class="checkbox" id="">Data Visualization
+                </label>
+                <label for="challenge">
+                    <input type="checkbox" name="improve"  value="chall" class="checkbox" id="">Challenges
+                </label>
+                <label for="openSource">
+                    <input type="checkbox" name="improve" value="source"  class="checkbox" id="">Open Source Community
+                </label>
+                <label for="git">
+                    <input type="checkbox" name="improve" value="gitter"  class="checkbox" id="">Gitter help rooms
+                </label>
+                <label for="videos">
+                    <input type="checkbox" name="improve" value="videos"  class="checkbox" id="">Videos
+                </label>
+                <label for="Meetups">
+                    <input type="checkbox" name="improve"  value="meetups" class="checkbox" id="">City Meetups
+                </label>
+                <label for="wiki">
+                    <input type="checkbox" name="improve"  value="wiki" class="checkbox" id="">Wiki
+                </label>
+                <label for="forum">
+                    <input type="checkbox" name="improve" value="forum"  class="checkbox" id="">Forum
+                </label>
+                <label for="course">
+                    <input type="checkbox" name="improve"  value="course"  class="checkbox" id="">Additional Courses
+                </label>
+<!-- END IMPROVES -->
 
+<!-- COMMENTS -->
+            <label for="comments" class="suggests">Any comments or suggestions?
+            </label>
+                <textarea name="comments" id="" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+<!-- END COMMENTS -->
 
+<!-- SUBMIT -->
+            <input type="submit" name="submit" id="submit" value="Submit">
+<!--END SUBMIT -->
 
-
-
-
-            <input type="submit" name="submit" id="submit">
-
-
-
-
-        </form>
+</form>
+<!-- END FORM -->
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 </html>

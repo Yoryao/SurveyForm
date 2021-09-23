@@ -1,37 +1,86 @@
 body {
-background-image: url("./img/meeting-image.jpg");
-background-color: #419F00;
-background-size: cover;
-background-attachment: fixed;
-}
+    background-image: linear-gradient(rgba(0,0,100,0.5), rgba(0,0,100,0.5)), url("./img/meeting-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
 
 #title {
-    border: 2px white solid;
+    width: 50%;
+    margin: auto;
     text-align: center;
     color: white;
+    padding-top: 15px;
+
 }
 
 #description {
-    border: 2px white solid;
+    width: 50%;
+    margin: auto;
     text-align: center;
     color: white;
     font-style: italic;
+    padding-bottom: 10px;
+  
 }
 
 #survey-form{
-    width: 50%;
+    width: 40%;
     margin: auto;
+    border-radius: 5px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: forestgreen;
+    background-color: rgb(78, 100, 194);
     opacity: 0.9;
-;
+    color: white;
+
 }
 
 form {
-    border: 2px white solid;
     display: grid;
-    position: absolute;
-    /*background-color: forestgreen;
-    opacity: 0.9;*/
+    min-width: 400px;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.checkbox, .radio, .recommend, .role {
+    margin-right: 7px;
+}
+
+.features, .suggests {
+    margin-top: 15px;
+}
+
+#name, #email, #number {
+    height: 30px;
+}
+
+div {
+    padding-top: 15px;
+    
+}
+
+select {
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+}
+
+textarea {
+    margin-top: 5px;
+}
+
+#submit {
+    line-height: 20px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(89, 202, 89);
+    color: white;
 }
